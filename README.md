@@ -7,7 +7,7 @@ OpenTelemetry instrumentation for [RubyLLM](https://rubyllm.com).
 Install the gem using:
 
 ```sh
-gem opentelemetry-instrumentation-ruby_llm
+gem install opentelemetry-instrumentation-ruby_llm
 ```
 
 Or, if you use [bundler](https://bundler.io/), include `opentelemetry-instrumentation-ruby_llm` in your `Gemfile`.
@@ -96,7 +96,7 @@ Attributes persist across calls on the same chat instance and the method returns
 | Conversation tracking (`gen_ai.conversation.id`) | Planned |
 | System instructions capture | Supported (via `capture_content`) |
 | Custom attributes on traces and spans | Supported (via `with_otel_attributes`) |
-| Embeddings | Planned |
+| Embeddings | Supported |
 | Streaming | Planned |
 
 This gem follows the [OpenTelemetry GenAI Semantic Conventions](https://opentelemetry.io/docs/specs/semconv/gen-ai/gen-ai-spans/).
